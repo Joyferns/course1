@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Masterclass - Your Journey to Data Expertise</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light grey background */
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+        }
+        .btn-primary {
+            @apply bg-blue-600 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-blue-700 transition duration-300 ease-in-out;
+        }
+        .card {
+            @apply bg-white rounded-xl shadow-md p-6 sm:p-8 transition-transform duration-300 ease-in-out hover:scale-105;
+        }
+        .icon {
+            /* Placeholder for SVG icons, could be replaced with actual SVG or an icon library */
+            @apply text-blue-500 mb-4;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-800">
+                DataMaster
+            </a>
+            <button class="btn-primary hidden sm:block">Enroll Now</button>
+            <button class="sm:hidden p-2 rounded-md text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <!-- Hamburger Icon -->
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-16 sm:py-24 text-center">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-6">
+                Unlock the Power of Data Science
+            </h1>
+            <p class="text-lg sm:text-xl md:text-2xl mb-10 max-w-3xl mx-auto opacity-90">
+                Master the skills needed to analyze, interpret, and leverage data for impactful decisions and innovations.
+            </p>
+            <a href="#enroll" class="btn-primary bg-white text-blue-600 hover:bg-gray-100 animate-bounce">
+                Start Your Journey Today
+            </a>
+        </div>
+    </header>
+
+    <!-- Course Highlights Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-12">What You'll Master</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Highlight Card 1 -->
+                <div class="card">
+                    <div class="icon mx-auto text-4xl">📊</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Statistical Analysis</h3>
+                    <p class="text-gray-600">Deep dive into statistical methods for robust data interpretation and hypothesis testing.</p>
+                </div>
+                <!-- Highlight Card 2 -->
+                <div class="card">
+                    <div class="icon mx-auto text-4xl">🐍</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Python for Data Science</h3>
+                    <p class="text-gray-600">Become proficient in Python, Pandas, NumPy, and Matplotlib for data manipulation and visualization.</p>
+                </div>
+                <!-- Highlight Card 3 -->
+                <div class="card">
+                    <div class="icon mx-auto text-4xl">🧠</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Machine Learning</h3>
+                    <p class="text-gray-600">Explore supervised and unsupervised learning algorithms, model building, and evaluation.</p>
+                </div>
+                <!-- Highlight Card 4 -->
+                <div class="card">
+                    <div class="icon mx-auto text-4xl">✨</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Data Visualization</h3>
+                    <p class="text-gray-600">Create compelling and insightful data visualizations with Seaborn and Plotly.</p>
+                </div>
+                <!-- Highlight Card 5 -->
+                <div class="card">
+                    <div class="icon mx-auto text-4xl">☁️</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Big Data Tools</h3>
+                    <p class="text-gray-600">Understand concepts of Big Data and introduction to tools like Spark and Hadoop.</p>
+                </div>
+                <!-- Highlight Card 6 -->
+                <div class="card">
+                    <div class="icon mx-auto text-4xl">📈</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Real-World Projects</h3>
+                    <p class="text-gray-600">Apply your knowledge to practical, industry-relevant data science projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Course/Instructor Section -->
+    <section class="py-16 bg-blue-50">
+        <div class="container mx-auto px-4 text-center sm:text-left md:flex items-center gap-12">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <img src="https://placehold.co/600x400/ADDCFF/2A60AA?text=Experienced+Instructor" alt="Instructor Profile" class="rounded-xl shadow-lg w-full h-auto object-cover transform transition-transform duration-500 hover:scale-105">
+            </div>
+            <div class="md:w-1/2">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-6">Learn from Industry Experts</h2>
+                <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                    Our Data Science Masterclass is designed by leading professionals with years of experience in the field.
+                    Gain practical insights, hands-on experience, and a comprehensive understanding of data science principles
+                    that are directly applicable to today's job market.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                    With a curriculum updated for the latest trends and technologies, you'll be well-equipped to tackle complex data challenges and drive innovation in any industry.
+                </p>
+                <a href="#curriculum" class="btn-primary">View Full Curriculum</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="enroll" class="bg-blue-800 text-white py-16 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-6">Ready to Transform Your Career?</h2>
+            <p class="text-lg sm:text-xl mb-10 max-w-2xl mx-auto opacity-90">
+                Join thousands of successful data professionals who started their journey with us.
+                Limited seats available for the next batch!
+            </p>
+            <a href="#" class="btn-primary bg-white text-blue-800 hover:bg-gray-100">
+                Enroll Today
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-10">
+        <div class="container mx-auto px-4 text-center text-sm">
+            <p class="mb-4">&copy; 2025 DataMaster. All rights reserved.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="hover:text-white transition duration-200">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition duration-200">Terms of Service</a>
+                <a href="#" class="hover:text-white transition duration-200">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
